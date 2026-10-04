@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "alone",
+  "version": "${version}",
+  "name": "Alone",
+  "description": "Empty world, fog, creepy sounds and a tall stranger who watches you.",
+  "authors": ["Qozha"],
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["kz.qozha.QozhaMod"],
+    "client": ["kz.qozha.client.QozhaClient"]
+  },
+  "mixins": [ { "config": "alone.mixins.json", "environment": "client" } ],
+  "depends": {
+    "fabricloader": ">=0.16.9",
+    "minecraft": "~1.21.4",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
